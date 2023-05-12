@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multi-step form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+       <aside class="sidebar">
+      <div class="side-item">
+      <button class="side-btn side-btn--active">1</button>
+        <div class="side-txt">
+          <p>step 1</p>
+          <h4>your info</h4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn">2</button>
+        <div class="side-txt">
+          <p>step 2</p>
+          <h4>select plan</h4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn">3</button>
+        <div class="side-txt">
+          <p>step 3</p>
+          <h4>add-ons</4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn">4</button>
+        <div class="side-txt">
+          <p>step 4</p>
+          <h4>summary</h4>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <h3>
+          Personal info
+        </h3>
+        <p class="page-head">
+          Please provide your name, email address, and phone number.
+        </p>
+      </header>
+      <form class="info">
+        <div class="input-control">
+          <label for="name" class="info-label">Name</label>
+          <input type="text" placeholder ="e.g. Stephen King" class="info-input" name="value">
+          <span class="errormessage">This field is required</span>
+        </div>
+        <div class="input-control">
+          <label for="email" class="info-label">Email Address</label>
+          <input type="email" placeholder ="e.g. stephenking@lorem.com" class="info-input" name="email">
+          <span class="errormessage">This field is required</span>
+        </div>
+        <div class="input-control">
+          <label for="name" class="info-label">Phone Number</label>
+          <input type="text" placeholder ="e.g. +1 234 567 890" class="info-input" name="Number">
+          <span class="errormessage">This field is required</span>
+        </div>
+      </form>
+      <footer>
+        <input type="submit" value="Next step" class="next-btn">
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>

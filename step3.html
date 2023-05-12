@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-ons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="step2.css" />
+    <link rel="stylesheet" href="step3.css" />
+  </head>
+  <body>
+    <div class="container" >
+       <aside class="sidebar">
+      <div class="side-item">
+        <button class="side-btn focus">1</button>
+        <div class="side-txt">
+          <p>step 1</p>
+          <h4>your info</h4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn">2</button>
+        <div class="side-txt">
+          <p>step 2</p>
+          <h4>select plan</h4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn  side-btn--active">3</button>
+        <div class="side-txt">
+          <p>step 3</p>
+          <h4>add-ons</4>
+        </div>
+      </div>
+      <div class="side-item">
+        <button class="side-btn">4</button>
+        <div class="side-txt">
+          <p>step 4</p>
+          <h4>summary</h4>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <h3>
+      Pick add-ons
+        </h3>
+        <p class="page-head">
+         Add-ons help enhance your gaming experience
+        </p>
+      </header>
+      <div class="step-container">
+        <div class="step-info step--active">
+          <div class="step-item">
+            <input type="checkbox" name="online" id="checkbox" value="true" checked>
+            <div class="step-txt">
+              <p>Online service</p>
+              <span>Access to multiplayer games</span>
+            </div>
+          </div>
+          <p class="step-price">+&dollar;<span id="price">1</span>/<span id="mo-yr">mo</span></p>
+        </div>
+        <div class="step-info step--active">
+          <div class="step-item">
+            <input type="checkbox" name="storage" id="checkbox" value="true" checked>
+            <div class="step-txt">
+              <p>Larger storage</p>
+              <span>Extra 1TB of cloud save</span>
+            </div>
+          </div>
+          <p class="step-price">+&dollar;<span id="price">2</span>/<span id="mo-yr">mo</span></p>
+        </div>
+        <div class="step-info">
+          <div class="step-item">
+            <input type="checkbox" name="online" id="checkbox">
+            <div class="step-txt">
+              <p>Customizable profile</p>
+              <span>Custom theme on your profile</span>
+            </div>
+          </div>
+          <p class="step-price">+&dollar;<span id="price">2</span>/<span id="mo-yr">mo</span></p>
+        </div>
+      </div>
+        <button class="goback">go back</button>
+       <button class="nextbtn">next step</button>
+    </main>
+  </div>
+  <script src="step3.js"></script>
+  </body>
+</html>
+  

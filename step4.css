@@ -1,0 +1,132 @@
+:root {
+    --light-color: #fff;
+    --Light-gray: hsl(229, 24%, 87%);
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    --transition:  0.3s ease-in-out;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+  /* reset */
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    /* padding: 20px; */
+  }
+  button {
+    font: inherit;
+  }
+  input {
+    outline: none;
+  }
+
+  /* base style */
+
+  .step-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .payment{
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 7px;
+    padding: 30px;
+  }
+  .payment-center{
+    display: flex;
+    border-bottom: 1px solid var(--Light-gray);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 25px;
+    line-height: 1.4;
+  }
+  .payment-center-txt p,
+  .payment-center p{
+    color: var(--Marine-blue);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  .change{
+    color: var(--Cool-gray);
+    text-decoration: underline;
+   cursor: pointer; 
+  }
+ .change:hover{
+    color: var(--Purplish-blue);
+    transition: var(--transition);
+ }
+
+  .payment-service,  .payment-storage,.payment-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--Cool-gray);
+    font-size: 1.05rem;
+  }
+
+  .payment-storage span,
+  .payment-service span,.payment-custom span{
+    color: var(--Marine-blue);
+  }
+ .hidden{
+  display: none;
+ }
+  .total-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+  }
+
+ .total-price p{
+    color: var(--Cool-gray);
+    font-size: 1.05rem;
+ }
+
+ .total-price #price{
+    color: var(--Purplish-blue);
+    font-size: 1.35rem;
+    font-weight: 700;
+ }
+
+ .nextbtn{
+    background-color: var(--Purplish-blue);
+ }
+
+ .nextbtn:hover{
+    background-color: var(--Pastel-blue);
+ }
+
+ /* for thankyou page */
+ .thank-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+ }
+
+ .thank-head{
+  color: var(--Marine-blue);
+  font-size: 2.35rem;
+ }
+
+ .thank-text{
+  color: var(--Cool-gray);
+  text-align: center;
+  font-size:1.23rem;
+  max-width: 500px;
+ }
